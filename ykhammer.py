@@ -78,7 +78,8 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	YKHammer Dos Komut Dosyası v.1 http://furkanmiklarpersonal.000.pe/
+	print('''
+\033[92m  YKHammer Dos Komut Dosyası v.1 http://furkanmiklarpersonal.000.pe/
 Geçerli tüm yasalara uymak son kullanıcının sorumluluğundadır.
 Bu sadece sunucu test betiği içindir. IP'niz görünüyor. \N
 kullanım: python3 ykhammer.py [-s] [-p] [-t]
@@ -86,7 +87,7 @@ kullanım: python3 ykhammer.py [-s] [-p] [-t]
 -s : sunucu IP'si
 -p : bağlantı noktası varsayılanı 80
 -t : turbo varsayılanı 135 \033[0m''')
-	sys.exit()
+sys.exit()
 
 
 def get_parameters():
