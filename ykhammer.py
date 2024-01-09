@@ -70,9 +70,10 @@ def dos2():
 
 def usage():
     print('''
-    \033[92m    Hammer DoS Komut Dosyası v.1 http://www.canyalcin.com/
+    \033[92m    YKHammer DoS Komut Dosyası v.1 http://furkanmiklarpersonal.000.pe/
     Geçerli tüm yasalara uymak son kullanıcının sorumluluğundadır.
-    Bu sadece sunucu test betiği içindir. IP'niz görünüyor. \n
+    Bu sadece sunucu test betiği içindir. IP'niz görünüyor.
+    Yakalayamazsın checker discord :https://discord.gg/z2NybjU6JN \n
     kullanım : python3 hammer.py [-s] [-p] [-t]
     -h : yardım
     -s : sunucu IP'si
